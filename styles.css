@@ -1,12 +1,13 @@
 :root {
   --clr-dark: #222;
   --clr-white: #fff;
-  --img-svg: #00000066;
+  --img-svg: ##00000066;
   --price-clr: #000000cc;
   --product-container: #ebebeb;
-  --collection-container: #343332;
-  --collection-under-text: #ffffff99;
   --header-p: #222222cc;
+  --collection-bg: #343332;
+  --menu-clr: #999;
+  --header-bg: #eee;
   --phone-bg: #c4c4c4;
 }
 
@@ -18,6 +19,94 @@
   box-sizing: border-box;
 }
 
-.body {
+body {
   font-family: 'Fira Sans', sans-serif;
+  margin-inline: auto;
 }
+
+/* ----- Nav ----- */
+
+.nav-wrapper,
+.header-wrapper {
+  background: var(--header-bg);
+}
+
+.nav-wrapper__nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  padding: 32px 12px 72px;
+  margin-inline: auto;
+  font-size: 12px;
+  color: var(--clr-darks);
+  /* background: azure; */
+}
+
+.nav-container__logo {
+  padding: 12px 0;
+}
+
+.nav-container__list-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  width: 40%;
+  list-style-type: none;
+  color: var(--menu-clr);
+}
+
+.nav-container__list-container :first-child {
+  font-weight: 500;
+  color: var(--clr-dark);
+}
+
+.nav-container__btn {
+  font-family: inherit;
+  padding: 12px 30px;
+  font-weight: 500;
+  border: 1px solid var(--clr-dark);
+  border-radius: 3px;
+}
+
+.nav-container__mobile-menu {
+  display: none;
+}
+
+@media (max-width: 999px) {
+  .nav-container__list-container,
+  .nav-container__btn {
+    display: none;
+  }
+
+  .nav-container__mobile-menu {
+    display: block;
+  }
+}
+
+/* ----- Header ----- */
+/* .header-wrapper__header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 1440px;
+  width: 40%;
+  margin-inline: auto;
+  font-size: 12px;
+  color: var(--clr-darks);
+  background: antiquewhite;
+}
+
+.header-container__header {
+  font-size: 53px;
+  font-weight: 700;
+}
+
+.header-container__text {
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--small-text-clr);
+} */
