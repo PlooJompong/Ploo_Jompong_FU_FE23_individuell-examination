@@ -1,0 +1,23 @@
+:root {
+  --clr-dark: #222;
+  --clr-white: #fff;
+  --img-svg: #00000066;
+  --price-clr: #000000cc;
+  --product-container: #ebebeb;
+  --collection-container: #343332;
+  --collection-under-text: #ffffff99;
+  --header-p: #222222cc;
+  --phone-bg: #c4c4c4;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: 'Fira Sans', sans-serif;
+}
