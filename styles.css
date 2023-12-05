@@ -1,14 +1,20 @@
 :root {
   --clr-dark: #222;
   --clr-white: #fff;
-  --img-svg: ##00000066;
-  --price-clr: #000000cc;
+  --clr-svg: ##00000066;
+  --clr-price: #000000cc;
+  --clr-menu: #999;
   --product-container: #ebebeb;
-  --header-p: #222222cc;
   --collection-bg: #343332;
-  --menu-clr: #999;
+  --header-p: #222222cc;
   --header-bg: #eee;
   --phone-bg: #c4c4c4;
+
+  --ff-primary: 'Fira Sans', sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
 }
 
 *,
@@ -20,14 +26,15 @@
 }
 
 body {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: var(--ff-primary);
   margin-inline: auto;
 }
 
 /* ----- Nav ----- */
-
 .nav-wrapper,
 .header-wrapper {
+  max-width: 1440px;
+  margin-inline: auto;
   background: var(--header-bg);
 }
 
@@ -35,11 +42,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1440px;
   padding: 32px 12px 72px;
-  margin-inline: auto;
   font-size: 12px;
-  color: var(--clr-darks);
+  color: var(--clr-dark);
   /* background: azure; */
 }
 
@@ -51,21 +56,20 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-shrink: 0;
-  width: 40%;
+  width: 38%;
   list-style-type: none;
-  color: var(--menu-clr);
+  color: var(--clr-menu);
 }
 
 .nav-container__list-container :first-child {
-  font-weight: 500;
+  font-weight: var(--fw-medium);
   color: var(--clr-dark);
 }
 
 .nav-container__btn {
-  font-family: inherit;
+  font-family: var(--ff-primary);
   padding: 12px 30px;
-  font-weight: 500;
+  font-weight: var(--fw-medium);
   border: 1px solid var(--clr-dark);
   border-radius: 3px;
 }
@@ -86,27 +90,147 @@ body {
 }
 
 /* ----- Header ----- */
-/* .header-wrapper__header-container {
+.header-wrapper {
+  /* background-color: purple; */
+}
+
+.header-wrapper__header-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  max-width: 1440px;
-  width: 40%;
+  width: 38%;
   margin-inline: auto;
   font-size: 12px;
-  color: var(--clr-darks);
-  background: antiquewhite;
+  color: var(--clr-dark);
+  /* background: antiquewhite; */
 }
 
-.header-container__header {
+.header-container__title {
   font-size: 53px;
-  font-weight: 700;
+  margin-bottom: 7px;
+  font-weight: var(--fw-bold);
 }
 
 .header-container__text {
   font-size: 16px;
+  margin-bottom: 40px;
   line-height: 150%;
-  color: var(--small-text-clr);
-} */
+  color: var(--header-p);
+}
+
+.header-container__btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  /* background-color: aquamarine; */
+}
+
+.btn-container--btn-styles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 4px 8px 10px;
+  width: 134px;
+  font-size: 16px;
+  color: var(--clr-white);
+  font-family: var(--ff-primary);
+  background: var(--clr-dark);
+  border-radius: 6px;
+  outline-style: none;
+}
+
+@media (min-width: 1141px) and (max-width: 1312px) {
+  .header-wrapper__header-container {
+    width: 39%;
+  }
+}
+
+@media (min-width: 862px) and (max-width: 1140px) {
+  .header-container__title {
+    font-size: 39px;
+  }
+
+  .header-container__text {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 728px) and (max-width: 861px) {
+  .header-wrapper__header-container {
+    width: 45%;
+  }
+
+  .header-container__title {
+    font-size: 39px;
+  }
+
+  .header-container__text {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 586px) and (max-width: 727px) {
+  .header-wrapper__header-container {
+    width: 53%;
+  }
+
+  .header-container__title {
+    font-size: 37px;
+  }
+
+  .header-container__text {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 509px) and (max-width: 585px) {
+  .header-wrapper__header-container {
+    width: 61%;
+  }
+
+  .header-container__title {
+    font-size: 37px;
+  }
+
+  .header-container__text {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 462px) and (max-width: 508px) {
+  .header-wrapper__header-container {
+    width: 68%;
+  }
+
+  .header-container__title {
+    font-size: 37px;
+  }
+
+  .header-container__text {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 461px) {
+  .header-wrapper__header-container {
+    width: 81%;
+  }
+
+  .header-container__title {
+    font-size: 36px;
+  }
+
+  .header-container__text {
+    font-size: 12px;
+  }
+
+  .header-container__phone {
+    width: 400px;
+    height: 265px;
+  }
+}
