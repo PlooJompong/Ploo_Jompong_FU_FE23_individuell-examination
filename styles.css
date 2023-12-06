@@ -45,7 +45,7 @@ img {
 
 .nav-wrapper__nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-container: space-between;
   align-items: center;
   max-width: 1440px;
   margin-inline: auto;
@@ -61,7 +61,7 @@ img {
 
 .nav-container__list-container {
   display: flex;
-  justify-content: space-between;
+  justify-container: space-between;
   align-items: center;
   width: 38%;
   list-style-type: none;
@@ -99,12 +99,13 @@ img {
 /* ----- Header ----- */
 .header-wrapper {
   /* background-color: purple; */
+  /* margin-bottom: 8rem; */
 }
 
 .header-wrapper__header-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-container: center;
   align-items: center;
   text-align: center;
   text-wrap: balance;
@@ -129,7 +130,7 @@ img {
 
 .header-container__btn-container {
   display: flex;
-  justify-content: center;
+  justify-container: center;
   align-items: center;
   max-width: 100%;
   gap: 2.5rem;
@@ -139,7 +140,7 @@ img {
 
 .btn-container--btn-styles {
   display: flex;
-  justify-content: center;
+  justify-container: center;
   align-items: center;
   gap: 0.5625rem;
   padding: 0.5rem 0.25rem 0.5rem 0.625rem;
@@ -216,4 +217,62 @@ img {
   .header-wrapper__header-container {
     width: 81%;
   }
+}
+
+/* ----- Main ----- */
+.main-wrapper {
+  background-color: hotpink;
+}
+
+.main-wrapper__main-container {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
+  width: min(80%, 1100px);
+  margin-inline: auto;
+}
+
+.main-container__title {
+  margin-bottom: 4rem;
+  justify-self: center;
+  grid-column: 1 / span 4;
+}
+
+.main-container__small-card {
+  display: flex;
+  flex-direction: column;
+  justify-container: center;
+  align-items: center;
+  width: 100%;
+}
+
+.main-container__product-1 {
+  grid-area: 2 / 1;
+  background-color: aquamarine;
+}
+
+.main-container__product-2 {
+  grid-area: 2 / 2;
+  background-color: aquamarine;
+}
+
+.main-container__product-3 {
+  grid-area: 2 / 3;
+  background-color: aquamarine;
+}
+
+.main-container__product-4 {
+  grid-area: 2 / 4;
+  background-color: aquamarine;
+}
+
+.main-container__collection-1 {
+  grid-area: 3 / 1 / 3 / 3;
+  background-color: bisque;
+}
+
+.main-container__collection-2 {
+  grid-area: 3 / 3 / 3 / 5;
+  background-color: bisque;
 }
