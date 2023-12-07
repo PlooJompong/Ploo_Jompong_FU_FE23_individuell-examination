@@ -45,7 +45,7 @@ img {
 
 .nav-wrapper__nav-container {
   display: flex;
-  justify-container: space-between;
+  justify-content: space-between;
   align-items: center;
   max-width: 1440px;
   margin-inline: auto;
@@ -61,7 +61,7 @@ img {
 
 .nav-container__list-container {
   display: flex;
-  justify-container: space-between;
+  justify-content: space-between;
   align-items: center;
   width: 38%;
   list-style-type: none;
@@ -99,19 +99,20 @@ img {
 /* ----- Header ----- */
 .header-wrapper {
   /* background-color: purple; */
-  /* margin-bottom: 8rem; */
+  margin-bottom: 8rem;
 }
 
 .header-wrapper__header-container {
   display: flex;
   flex-direction: column;
-  justify-container: center;
+  justify-content: center;
   align-items: center;
   text-align: center;
   text-wrap: balance;
   width: 38%;
   margin-inline: auto;
   color: var(--clr-dark);
+  overflow: hidden;
   /* background: antiquewhite; */
 }
 
@@ -130,7 +131,7 @@ img {
 
 .header-container__btn-container {
   display: flex;
-  justify-container: center;
+  justify-content: center;
   align-items: center;
   max-width: 100%;
   gap: 2.5rem;
@@ -140,7 +141,7 @@ img {
 
 .btn-container--btn-styles {
   display: flex;
-  justify-container: center;
+  justify-content: center;
   align-items: center;
   gap: 0.5625rem;
   padding: 0.5rem 0.25rem 0.5rem 0.625rem;
@@ -151,6 +152,45 @@ img {
   background: var(--clr-dark);
   border-radius: 6px;
   border-style: none;
+}
+
+.animation-slide-right {
+  animation: slide-right 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.animation-slide-left {
+  animation: slide-left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.header-container__phone {
+  animation: slide-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
 
 @media screen and (width < 1024px) {
@@ -242,7 +282,7 @@ img {
 .main-container__small-card {
   display: flex;
   flex-direction: column;
-  justify-container: center;
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
