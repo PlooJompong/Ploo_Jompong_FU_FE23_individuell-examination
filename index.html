@@ -10,6 +10,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/402575bb77.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Individuella Examination</title>
   </head>
   <body>
@@ -53,10 +57,10 @@
           vel eleifend diam, tempus accumsan neque. Praesent quis dolor.
         </p>
         <div class="header-wrapper__btn-container">
-          <button class="header-wrapper__btn-styles animation-fade-in-left">
+          <button class="header-wrapper__btn btn animation-fade-in-left">
             <img src="./assets/path.svg" alt="app store button" />App Store
           </button>
-          <button class="header-wrapper__btn-styles animation-fade-in-right">
+          <button class="header-wrapper__btn btn animation-fade-in-right">
             <img src="./assets/group.svg" alt="google play button" />Google Play
           </button>
         </div>
@@ -132,6 +136,65 @@
         </article>
       </div>
     </main>
+
     <!-- Footer -->
+    <footer class="footer-wrapper">
+      <div class="footer-wrapper__footer-container animation-fade-in">
+        <div class="footer-wrapper__sub-container">
+          <h2 class="footer-wrapper__header">Contact us</h2>
+          <p class="footer-wrapper__title">We'd love to hear from you</p>
+          <p class="footer-wrapper__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            vel eleifend diam, tempus accumsan neque.
+          </p>
+          <form class="footer-wrapper__form">
+            <!-- Name -->
+            <div class="footer-wrapper__form-item">
+              <label for="name" class="footer-wrapper__label"
+                ><i class="fa-solid fa-user"></i
+              ></label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="John Doe"
+                class="footer-wrapper__form-input"
+              />
+            </div>
+
+            <!-- Email -->
+            <div class="footer-wrapper__form-item">
+              <label for="email" class="footer-wrapper__label"
+                ><i class="fa-solid fa-envelope"></i
+              ></label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="info@zocom.se"
+                class="footer-wrapper__form-input"
+              />
+            </div>
+
+            <!-- Phone -->
+            <div class="footer-wrapper__form-item">
+              <label for="phone" class="footer-wrapper__label"
+                ><i class="fa-solid fa-phone"></i
+              ></label>
+              <input
+                type="number"
+                name="phone"
+                id="phone"
+                placeholder="070 123 45 67"
+                class="footer-wrapper__form-input"
+              />
+            </div>
+
+            <!-- Submit -->
+            <input type="submit" class="footer-wrapper__form-btn btn" />
+          </form>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
