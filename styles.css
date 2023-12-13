@@ -228,7 +228,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
   gap: 2rem;
   margin-bottom: 2.5rem;
 }
@@ -239,8 +238,7 @@ img {
   align-items: center;
   gap: 0.5625rem;
   padding: 0.5rem 0.25rem;
-  width: 8.125rem;
-  font-size: var(--fs-normal);
+  width: 8rem;
   font-weight: var(--fw-normal);
   color: var(--clr-white);
   background: var(--clr-dark);
