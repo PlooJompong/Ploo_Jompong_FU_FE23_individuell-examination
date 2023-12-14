@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -26,7 +26,9 @@
           class="nav-wrapper__logo"
         />
         <ul class="nav-wrapper__list-container">
-          <li class="nav-wrapper__list-items">HOME</li>
+          <li class="nav-wrapper__list-items nav-wrapper__list-items--selected">
+            HOME
+          </li>
           <li class="nav-wrapper__list-items">HOW IT WORKS</li>
           <li class="nav-wrapper__list-items">FEATURES</li>
           <li class="nav-wrapper__list-items">PRESS</li>
@@ -36,9 +38,7 @@
         <a
           href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
           target="_blank"
-          ><button class="nav-wrapper__btn btn animation-vibrate">
-            GET A QUOTE
-          </button></a
+          ><button class="nav-wrapper__btn--style btn">GET A QUOTE</button></a
         >
         <img
           src="./assets/navicon.svg"
@@ -57,17 +57,21 @@
           vel eleifend diam, tempus accumsan neque. Praesent quis dolor.
         </p>
         <div class="header-wrapper__btn-container">
-          <button class="header-wrapper__btn btn animation-fade-in-left">
+          <button
+            class="header-wrapper__btn header-wrapper__btn--animation-fade-in-left"
+          >
             <img src="./assets/path.svg" alt="app store button" />App Store
           </button>
-          <button class="header-wrapper__btn btn animation-fade-in-right">
+          <button
+            class="header-wrapper__btn header-wrapper__btn--animation-fade-in-right"
+          >
             <img src="./assets/group.svg" alt="google play button" />Google Play
           </button>
         </div>
         <img
           src="./assets/phone.svg"
           alt="phone"
-          class="header-wrapper__phone animation-fade-in-bottom"
+          class="header-wrapper__phone"
         />
       </div>
     </header>
@@ -125,14 +129,14 @@
         <article class="main-wrapper__big-card">
           <h3 class="main-wrapper__title">COLLECTION</h3>
           <p class="main-wrapper__text">Summer 2021</p>
-          <button class="main-wrapper__btn btn">CHECK IT OUT</button>
+          <button class="main-wrapper__btn--style btn">CHECK IT OUT</button>
         </article>
 
         <!-- Big Card 2 -->
         <article class="main-wrapper__big-card">
           <h3 class="main-wrapper__title">COLLECTION</h3>
           <p class="main-wrapper__text">Summer 2021</p>
-          <button class="main-wrapper__btn btn">CHECK IT OUT</button>
+          <button class="main-wrapper__btn--style btn">CHECK IT OUT</button>
         </article>
       </div>
     </main>
@@ -150,7 +154,9 @@
           <form class="footer-wrapper__form">
             <!-- Name -->
             <div class="footer-wrapper__form-item">
-              <label for="name"><i class="fa-solid fa-user"></i></label>
+              <label for="name">
+                <i class="fa-solid fa-user"></i>
+              </label>
               <input
                 type="text"
                 name="name"
@@ -163,7 +169,9 @@
 
             <!-- Email -->
             <div class="footer-wrapper__form-item">
-              <label for="email"><i class="fa-solid fa-envelope"></i></label>
+              <label for="email">
+                <i class="fa-solid fa-envelope"></i>
+              </label>
               <input
                 type="email"
                 name="email"
@@ -176,7 +184,9 @@
 
             <!-- Phone -->
             <div class="footer-wrapper__form-item">
-              <label for="phone"><i class="fa-solid fa-phone"></i></label>
+              <label for="phone">
+                <i class="fa-solid fa-phone"></i>
+              </label>
               <input
                 type="number"
                 name="phone"
