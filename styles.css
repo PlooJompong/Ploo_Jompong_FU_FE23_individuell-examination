@@ -287,7 +287,6 @@ img {
   justify-content: space-around;
   align-items: center;
   height: 23.75rem;
-  width: auto;
   border-radius: 3px;
   box-shadow: 0px 0px 4px 0px #00000014;
   background-color: var(--small-card-bg);
